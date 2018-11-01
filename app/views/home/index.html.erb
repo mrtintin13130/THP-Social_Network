@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+</head>
+<body>
+
+	<center><h1>Home</h1></center>
+	<br />
+	<br />
+	<br />
+	<% if session[:user_id] %>
+	<div class="d-flex flex-wrap justify-content-center">
+	<% @gossip.each do |gossip| %>
+	<div class="card" style="width: 23%; margin: 5px;">
+		<div class="card-body">
+    		<h5 class="card-title"><%= gossip.title %></h5>
+    		<% @name = User.find(gossip.user_id) %>
+    		<h6 class="card-subtitle mb-2 text-muted">Author: <i><%= @name.name %></i></h6>
+    		<p class="card-text"><%= gossip.content %></p>
+    		<%= link_to "See", "/", class: "card-link" %>
+    		<a href="#" class="card-link">Comment</a>
+    		<i class="card-link far fa-heart"></i>
+  		</div>
+	</div>
+	<% end %>
+	</div>
+	<% else %>
+	<div class="container ">
+		<div class="row">
+			<div class="col">
+			</div>
+			<div class="col-6">
+				<div class="alert alert-primary text-center" role="alert">
+					<h3>Login to see the content !</h3>
+				</div>
+				<center><%= link_to 'Login', '/login', class: "btn btn-primary" %></center>
+			</div>
+			<div class="col">
+			</div>
+		</div>
+
+		<% end %>
+
+	</body>
+	</html>
