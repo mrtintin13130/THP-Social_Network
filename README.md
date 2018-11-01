@@ -11,18 +11,20 @@ Voici le lien heroku pour voir à quoi cela peut ressembler en production :
 Une fois le dépot cloné:
 
 ```
-cd [nom-du-repo]
+$ cd [nom-du-repo]
 
-rails db:create
+$ rails db:create
 
-rails db:migrate ```
+$ rails db:migrate 
+```
 
 ## UTILISATION
 
 Pour lancer le serveur en local :
 
 ```
-rails server ```
+rails server 
+```
 
 ## GROUPE
 
