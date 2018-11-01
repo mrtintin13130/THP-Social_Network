@@ -1,24 +1,35 @@
-# README
+# THE GOSSIP PROJECT
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## PRODUCTION
 
-Things you may want to cover:
+Voici le lien heroku pour voir à quoi cela peut ressembler en production :
 
-* Ruby version
+[Cliquez-ici](https://thp-social-gossip.herokuapp.com/)
 
-* System dependencies
+## INSTALLATION
 
-* Configuration
+Une fois le dépot cloné:
 
-* Database creation
+```
+cd [nom-du-repo]
 
-* Database initialization
+rails db:create
 
-* How to run the test suite
+rails db:migrate ```
 
-* Services (job queues, cache servers, search engines, etc.)
+## UTILISATION
 
-* Deployment instructions
+Pour lancer le serveur en local :
 
-* ...
+```
+rails server ```
+
+## GROUPE
+
+* Stéphane (Github user: Timmo404)
+
+* Mickael (Github user: jango974)
+
+* Elliot (Github user: nomoon456)
+
+* Martin (Github user: mrtintin13130)
