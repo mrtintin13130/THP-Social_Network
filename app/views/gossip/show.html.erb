@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<h1 class="text-center"><b>Gossip n° <%= @gossip.id %></b></h1>
+	<br>
+	<br>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+			</div>
+			<div class="col-8">
+
+				<div class="card text-center">
+					<div class="card-header">
+						<h3><%= @gossip.title %></h3>
+					</div>
+					<div class="card-body">
+						<p><%= @gossip.content %></p>
+					</div>
+					<div class="card-footer">
+						<% @name = User.find(@gossip.user_id) %>
+						<%= @name.name %>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+			</div>
+		</div>
+	</body>
+	</html>
+
+</body>
+</html>

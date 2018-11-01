@@ -8,4 +8,8 @@ class GossipController < ApplicationController
     @gossip.save
     redirect_to "/"
   end
+
+  def show
+    @gossip = Gossip.find(params[:id])
+  end
 end

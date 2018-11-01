@@ -18,7 +18,7 @@
     		<% @name = User.find(gossip.user_id) %>
     		<h6 class="card-subtitle mb-2 text-muted">Author: <i><%= @name.name %></i></h6>
     		<p class="card-text"><%= gossip.content %></p>
-    		<%= link_to "See", "/", class: "card-link" %>
+    		<%= link_to "See", "/gossip/#{gossip.id}", class: "card-link" %>
     		<a href="#" class="card-link">Comment</a>
     		<i class="card-link far fa-heart"></i>
   		</div>
